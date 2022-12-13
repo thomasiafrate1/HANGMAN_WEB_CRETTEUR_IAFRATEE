@@ -2,9 +2,10 @@ h1 {
     font-size:100px;
     text-align: center;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    margin-top: 10%;
+    margin-top: 5%;
     z-index: 50;
     position: absolute;
+    margin-left: 27%;
 }
 
 .fond{
@@ -16,26 +17,22 @@ h1 {
 
 
 .niveaux{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 80px;
+    
     
 }
 
 .replay{  
     color: azure;
-    position: absolute;
+    position:absolute;
     border-radius: 20px;
     width: 180px;
     height: 70px;
     font-size: 30px;
    background-color: aqua;
-    background-position: bottom;
-    background-size: 170%;
+    background-position: center;
     border: 2;    
-    border-color: aliceblue;
-    margin-right: 5%;
+    margin-left:15%;
+    margin-top: 30%;
 }
 
 .replay:hover {
@@ -54,7 +51,8 @@ h1 {
     background-position: center;
     background-color: blue;
     border: 0;
-    margin-right: 5%;
+    margin-left: 30%;
+    margin-top: 30%;
     position: absolute;
 }
 
@@ -73,7 +71,8 @@ h1 {
     height: 70px;
     font-size: 30px;
     position: absolute;
-    margin-left: 55%;
+    margin-left: 45%;
+    margin-top: 30%;
     
     background-size: 250%;
     border: 0;
@@ -96,6 +95,8 @@ h1 {
     display: block;
     margin:auto;
     position: absolute;
+    margin-left: 27%;
+    margin-top: 10%;
 }
 
 ::-webkit-input-placeholder {
