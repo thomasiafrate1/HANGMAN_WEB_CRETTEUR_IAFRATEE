@@ -11,6 +11,7 @@ h1 {
     margin-left: 66%;
     margin-top: -7%;
     z-index: 0;
+    background-color: blue;
 }
 
 
@@ -96,3 +97,7 @@ h1 {
     font-size: 30px;
  }
 
+
+ body {
+    
+  }

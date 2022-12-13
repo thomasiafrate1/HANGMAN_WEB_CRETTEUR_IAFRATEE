@@ -116,14 +116,6 @@ func Loose(w http.ResponseWriter, r *http.Request) {
 
 func Win(w http.ResponseWriter, r *http.Request) {
 
-	if level == "EASY" {
-		winners = append(winners, piscine.Score{Name, attempt})
-	} else if level == "NORMAL" {
-		winners = append(winners, piscine.Score{Name, attempt * 2})
-	} else {
-		winners = append(winners, piscine.Score{Name, attempt * 3})
-	}
-	winners = piscine.ScoreJoueur(winners)
 	new := Test{Win: winners}
 	tmpl := template.Must(template.ParseFiles("tmpl/win.html"))
 	tmpl.Execute(w, new)
