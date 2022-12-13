@@ -5,7 +5,7 @@ import (
 	"math/rand"
 	"net/http"
 	"os"
-	"piscine"
+	piscine "piscine/go"
 	"text/template"
 )
 
@@ -27,7 +27,7 @@ var Name string
 var level string
 
 func Accueil(w http.ResponseWriter, r *http.Request) {
-	http.ServeFile(w, r, "tmpl/accueil.html")
+	http.ServeFile(w, r, "templates/accueil.html")
 }
 
 func Choix(w http.ResponseWriter, r *http.Request) {
@@ -67,7 +67,7 @@ func Redirect(w http.ResponseWriter, r *http.Request) {
 		http.Redirect(w, r, "/accueil", 301)
 	} else {
 		new := Test{Att: attempt, Word: string(UdScore), Jose: piscine.Check(attempt), Rep: rep}
-		tmpl := template.Must(template.ParseFiles("tmpl/index.html"))
+		tmpl := template.Must(template.ParseFiles("templates/index.html"))
 		tmpl.Execute(w, new)
 	}
 }
@@ -109,7 +109,7 @@ func Hangman(w http.ResponseWriter, r *http.Request) {
 
 func Loose(w http.ResponseWriter, r *http.Request) {
 	new := Test{Word: pick}
-	tmpl := template.Must(template.ParseFiles("tmpl/loose.html"))
+	tmpl := template.Must(template.ParseFiles("templates/loose.html"))
 	tmpl.Execute(w, new)
 
 }
@@ -117,12 +117,11 @@ func Loose(w http.ResponseWriter, r *http.Request) {
 func Win(w http.ResponseWriter, r *http.Request) {
 
 	new := Test{Win: winners}
-	tmpl := template.Must(template.ParseFiles("tmpl/win.html"))
+	tmpl := template.Must(template.ParseFiles("templates/win.html"))
 	tmpl.Execute(w, new)
 }
 
 func main() {
-
 	http.HandleFunc("/", Redirect)
 	http.HandleFunc("/accueil", Accueil)
 	http.HandleFunc("/win", Win)
@@ -130,8 +129,8 @@ func main() {
 	http.HandleFunc("/hangman", Hangman)
 	http.HandleFunc("/choix", Choix)
 
-	fs := http.FileServer(http.Dir("./static"))
-	http.Handle("/static/", http.StripPrefix("/static/", fs))
+	fs := http.FileServer(http.Dir("./css"))
+	http.Handle("/css/", http.StripPrefix("/css/", fs))
 
 	portNumber := ":4000"
 
