@@ -20,7 +20,7 @@ h1 {
     align-items: center;
     text-align: center;
     margin-top: 80px;
-    position:absolute;
+    
 }
 
 .replay{  
@@ -73,7 +73,7 @@ h1 {
     height: 70px;
     font-size: 30px;
     position: absolute;
-    margin-left: 20%;
+    margin-left: 55%;
     
     background-size: 250%;
     border: 0;
