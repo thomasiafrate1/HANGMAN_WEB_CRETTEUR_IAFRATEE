@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <p class="bg"></p>
     <div class="entete">
         <p>Chances restantes : {{ .Att }}</p>
     </div>
@@ -21,7 +22,7 @@
             <h1 class="word">{{ .Word }}</h1>
             <form action="/hangman" method="post">
                 <input required type="text" name="field2" class="button"><br>
-                <input type="submit" value="SUBMIT" class="button">
+                <input type="submit" value="Envoyer" class="button">
             </form>
         </div>
         <div class="contenu">

@@ -1,11 +1,15 @@
+@import 'https://fonts.googleapis.com/css?family=Boogaloo';
+
 h1 {
     font-size:100px;
     text-align: center;
-    font-family:Georgia, 'Times New Roman', Times, serif;
     margin-top: 7%;
     z-index: 50;
     position: absolute;
-    margin-left: 12%;
+    margin-left: 13%;
+    font-family: 'Boogaloo', sans-serif, cursive;
+    padding: 2.5% 5%;
+    text-transform: uppercase;
 }
 
 .fond{
@@ -28,7 +32,8 @@ body {
     font-size: 30px;
     background-color: green;
     background-position: center;
-    border: 0;    
+    border: 0;
+    font-family: 'Boogaloo', sans-serif, cursive;    
     margin-left:10%;
     margin-top: 30%;
 }
@@ -42,6 +47,7 @@ body {
 
 .replay2{  
     color: azure;
+    font-family: 'Boogaloo', sans-serif, cursive;
     border-radius: 20px;
     width: 180px;
     height: 70px;
@@ -66,6 +72,7 @@ body {
     border-radius: 20px;
     background-color: red;
     width: 180px;
+    font-family: 'Boogaloo', sans-serif, cursive;
     height: 70px;
     font-size: 30px;
     position: absolute;
@@ -85,6 +92,7 @@ body {
 #pseudo{
     border: 2px solid rgb(0, 0, 0);
     width: 40%;
+    font-family: 'Boogaloo', sans-serif, cursive;
     border-radius: 20px;
     height: 80px;
     font-size: 30px;

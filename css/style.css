@@ -1,35 +1,80 @@
+@import 'https://fonts.googleapis.com/css?family=Boogaloo';
+
+body{
+    font-family: 'Boogaloo', sans-serif, cursive;
+}
+
+.bg {
+    width: 109.5%;
+    margin-left: -10%;
+    position: absolute;
+    height: 119.3vh;
+    display: flex;
+    margin-top: -10%;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    background-size: 300% 300%;
+    background-image: linear-gradient(
+        -45deg, 
+        red 0%, 
+        orange 25%, 
+        yellow  51%, 
+        rgba(255,53,127,1) 100%
+  );  
+  animation: AnimateBG 20s ease infinite;
+  }
+  @keyframes AnimateBG { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+  
 .entete{
     text-align: center;
     font-size: 50px;
+    position: absolute;
+    font-family: 'Boogaloo', sans-serif, cursive;
 }
 .word{
     letter-spacing: 10px;
+    position: absolute;
+    font-family: 'Boogaloo', sans-serif, cursive;
 }
 
 .main{
     display: flex;
+    position: absolute;
+    font-family: 'Boogaloo', sans-serif, cursive;
     height: 500px;
+    
 }
 .menu{
     font-size: 50px;
     text-align: center;
+    font-family: 'Boogaloo', sans-serif, cursive;
     flex: 1;
+    position: absolute;
     display: inline-block;
 }
 
 .contenu{
     font-size: 50px;
+    font-family: 'Boogaloo', sans-serif, cursive;
     text-align: center;
+    position: absolute;
     width: 50%;
 }
 .button{
     border: 2px solid rgb(0, 0, 0);
     width: 45%;
+    font-family: 'Boogaloo', sans-serif, cursive;
     border-radius: 20px;
     height: 50px;
+    position: absolute;
     font-size: 30px;
     text-align: center;
-    margin-top: 70px;
+    margin-top: 25%;
     display: block;
     margin:auto;
 }
