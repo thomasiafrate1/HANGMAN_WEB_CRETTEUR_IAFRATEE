@@ -17,20 +17,28 @@
         <p>Chances restantes : {{ .Att }}</p>
     </div>
 
-    <div class="main">
         <div class="menu">
             <h1 class="word">{{ .Word }}</h1>
-            <form action="/hangman" method="post">
-                <input required type="text" name="field2" class="button"><br>
-                <input type="submit" value="Envoyer" class="button">
+        </div>
+    <div class="position">
+        <form action="/hangman" method="post">
+            <input required type="text" name="field2" class="button"><br>
+        </form>
+    </div>
+    <div class="position">
+        <form action="/hangman" method="post">
+            <input type="submit" value="Envoyer" class="button2">
             </form>
-        </div>
-        <div class="contenu">
-            <p><pre>{{ .Jose }}</pre></p>
-            {{range .Rep}} 
-                {{.}} 
-            {{end}}
-        </div>
+    </div>
+    <form action="/hangman" method="post">
+    <input type="submit" value="Envoyer" class="button2">
+    </form>
+
+    <div class="contenu">
+        <p><pre>{{ .Jose }}</pre></p>
+        {{range .Rep}} 
+            {{.}} 
+        {{end}}
     </div>
 </body>
 
