@@ -87,7 +87,7 @@ body{
     font-size: 30px;
     text-align: center;
     position: absolute;
-    margin-top: 100%;
+    margin-top: 10%;
     display: block;
     margin:auto;
 
@@ -98,5 +98,11 @@ body{
     margin-left: 4%;
     position: absolute;
     width: 90%;
-    
+}
+
+.position2{
+    margin-top: 40%;
+    position: absolute;
+    width: 90%;
+    margin-left: 4%;
 }
