@@ -1,3 +1,5 @@
+@import 'https://fonts.googleapis.com/css?family=Boogaloo';
+
 th,td {
     border: 5px solid black;
     padding: 10px;
@@ -20,6 +22,7 @@ h1 {
     text-align: center;
     color: white;
     font-size: 130px;
+    font-family: 'Boogaloo', sans-serif, cursive; 
 }
 
 

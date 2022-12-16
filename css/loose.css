@@ -1,5 +1,7 @@
+@import 'https://fonts.googleapis.com/css?family=Boogaloo';
+
 body{
-    background-color: rgb(159, 144, 144);
+    background-color: rgb(255, 0, 0);
     margin: auto 10px;
     width: auto;
     height: auto;
@@ -9,6 +11,7 @@ h1 {
     text-align: center;
     color: white;
     font-size: 130px;
+    font-family: 'Boogaloo', sans-serif, cursive; 
 }
 
 #replay{  
