@@ -1,9 +1,8 @@
 @import 'https://fonts.googleapis.com/css?family=Boogaloo';
 
-body{
-    font-family: Arial, Helvetica, sans-serif
-}
-
+body {
+    overflow: hidden; /* Hide scrollbars */
+  }
 .bg {
     width: 109.5%;
     margin-left: -10%;
