@@ -132,7 +132,7 @@ func main() {
 	fs := http.FileServer(http.Dir("./css"))
 	http.Handle("/css/", http.StripPrefix("/css/", fs))
 
-	portNumber := ":4000"
+	portNumber := ":80"
 
 	fmt.Println("Listening on" + portNumber)
 	http.ListenAndServe(portNumber, nil)
